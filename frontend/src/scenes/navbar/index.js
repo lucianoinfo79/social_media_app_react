@@ -183,7 +183,7 @@ const Navbar = () => {
                   <Typography>{fullName}</Typography>
                 </MenuItem>
                 <MenuItem onClick={() => dispatch(setLogout())}>
-                  Log Out
+                  Sair
                 </MenuItem>
               </Select>
             </FormControl>

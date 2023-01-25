@@ -98,6 +98,7 @@ const Form = () => {
   };
 
   const handleFormSubmit = async (values, onSubmitProps) => {
+    console.log(isLogin);
     if (isLogin) await login(values, onSubmitProps);
     if (isRegister) await register(values, onSubmitProps);
   };
@@ -195,7 +196,7 @@ const Form = () => {
                       >
                         <input {...getInputProps()} />
                         {!values.picture ? (
-                          <p>Add Picture Here</p>
+                          <p>Adicione sua foto aqui.</p>
                         ) : (
                           <FlexBetween>
                             <Typography>{values.picture.name}</Typography>
